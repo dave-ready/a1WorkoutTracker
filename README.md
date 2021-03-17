@@ -31,6 +31,6 @@
   
 
   ## Contact
-  -Github Username: Dave-Ready
-  -E-mail: davis_ready@hotmail.com
+  - Github Username: Dave-Ready
+  - E-mail: davis_ready@hotmail.com
   
