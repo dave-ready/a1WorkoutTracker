@@ -28,8 +28,23 @@ router.put("/api/workouts/:id", (req, res) => {
     .catch(err => res.json(err));
 });
 
+router.post("/api/workouts", (req, res) => {
+  Workout.create({
+    day: Date.now()
+  })
+    .then(newWorkout => {
+      console.log("o am the cretead worrkout: ", newWorkout);
+      res.json(newWorkout);
+    })
+    .catch(err => res.json(err));
+});
 
 
+//router.delete("/api/workouts", (req, res) => {
+ 
+// });
 
-  
+
 };
+
+module.exports = router;
