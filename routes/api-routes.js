@@ -1,16 +1,33 @@
-const db = require("../models");
+const Workout = require("../models").Workout;
 const router = require("express").Router();
 
+
 module.exports = (app) => {
-  app.get("/api/workouts", (req, res) => {
-    db.Workout.find({}, (err, workouts) => {
-      if (err) {
-        console.log(err);
-      } else {
-        res.json(workouts);
-      }
-    });
-  });
+
+  router.get("/api/workouts", (req, res) => {
+  Workout.find()
+    .then(workouts => res.json(workouts))
+    .catch(err => res.json(err));
+});
+
+router.get("/api/workouts/range", (req, res) => {
+  Workout.find({})
+    .then(workouts => {
+      res.json(workouts);
+    })
+    .catch(err => res.json(err));
+});
+
+router.put("/api/workouts/:id", (req, res) => {
+  Workout.findByIdAndUpdate(
+    req.params.id,
+    { $push: { exercises: req.body } },
+    { new: true }
+  )
+    .then(workout => res.json(workout))
+    .catch(err => res.json(err));
+});
+
 
 
 
