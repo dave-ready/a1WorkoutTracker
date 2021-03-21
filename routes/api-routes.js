@@ -1,4 +1,4 @@
-const Workout = require("../models").Workout;
+const Workout = require("../models").workout;
 const router = require("express").Router();
 
 
@@ -10,13 +10,6 @@ module.exports = (app) => {
     .catch(err => res.json(err));
 });
 
-router.get("/api/workouts/range", (req, res) => {
-  Workout.find({})
-    .then(workouts => {
-      res.json(workouts);
-    })
-    .catch(err => res.json(err));
-});
 
 router.put("/api/workouts/:id", (req, res) => {
   Workout.findByIdAndUpdate(
@@ -39,10 +32,13 @@ router.post("/api/workouts", (req, res) => {
     .catch(err => res.json(err));
 });
 
-
-//router.delete("/api/workouts", (req, res) => {
- 
-// });
+router.get("/api/workouts/range", (req, res) => {
+  Workout.find({})
+    .then(workouts => {
+      res.json(workouts);
+    })
+    .catch(err => res.json(err));
+});
 
 
 };
