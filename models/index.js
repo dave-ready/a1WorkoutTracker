@@ -1,7 +1,7 @@
-const Workout = require("../models")
+//const Workout = require("../models")
 
 module.exports = {
-    workout: require("./Workout"),
+    Workout: require("./workout"),
 };
 
 
