@@ -8,10 +8,10 @@
 
 
   ## Table of Contents
-  - [Description](#Description)
-  - [User Story](#Usage)
-  - [Technologies](#Technologies)
-  - [Installation](#Installation)
+  - [Description](#description)
+  - [User Story](#usage)
+  - [Technologies](#technologies)
+  - [Installation](#installation)
   - [Deployed App](#deployedApp)
 
   ## Description
@@ -31,6 +31,6 @@
   
 
   ## Contact
-  -Github Username: Dave-Ready
-  -E-mail: davis_ready@hotmail.com
+  - Github Username: Dave-Ready
+  - E-mail: davis_ready@hotmail.com
   
