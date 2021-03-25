@@ -12,7 +12,7 @@
   - [User Story](#Usage)
   - [Technologies](#Technologies)
   - [Installation](#Installation)
-  - [DeployedApp](#DeployedApp)
+  - [DeployedApp](#Deployed App)
 
   ## Description
   For this week's homework assignment, I created a workout tracker using MongoDB with a Mongoose Schema and all the routing handled by Express.
