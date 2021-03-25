@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const express = require("express");
 
+require("./seeders/seed");
+
 
 const app = express();
 
@@ -25,8 +27,6 @@ mongoose.connect(
 
 require("./routes/api-routes.js")(app)
 require("./routes/html-routes.js")(app)
-
-require("./seeders/seed");
 
 
 app.listen(PORT, () => {
