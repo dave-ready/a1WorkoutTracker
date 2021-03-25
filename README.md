@@ -12,6 +12,7 @@
   - [User Story](#Usage)
   - [Technologies](#Technologies)
   - [Installation](#Installation)
+  - [DeployedApp] (#Deployed App)
 
 
   ## Description
@@ -21,10 +22,14 @@
   As a user, I want to be able to view, create and track daily workouts.  I want to be able to log multiple exercises in a workout on a given day.  I should also be able to track the name, type, weight, sets, reps, and duration of exercise.  If the exercise is a cardio exercise, I should be able to track my distance travelled.
 
   ## Technologies
-  MongoDB, Mongoose, Morgan, Express, Javascript, HTML, CSS
+  MongoDB, Mongo Atlas, Mongoose, Morgan, Express, Javascript, HTML, CSS
 
   ## Installation
   npm install
+
+  ## Deployed App
+
+  https://frozen-badlands-33386.herokuapp.com/
 
 
 
