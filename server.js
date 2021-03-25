@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const express = require("express");
 
+
 const app = express();
 
 const PORT = process.env.PORT || 3000
@@ -24,6 +25,8 @@ mongoose.connect(
 
 require("./routes/api-routes.js")(app)
 require("./routes/html-routes.js")(app)
+
+require("./seeders/seed");
 
 
 app.listen(PORT, () => {
