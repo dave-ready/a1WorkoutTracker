@@ -12,7 +12,7 @@
   - [User Story](#Usage)
   - [Technologies](#Technologies)
   - [Installation](#Installation)
-  - [DeployedApp](#Deployed App)
+  - [Deployed App](#deployedApp)
 
   ## Description
   For this week's homework assignment, I created a workout tracker using MongoDB with a Mongoose Schema and all the routing handled by Express.
@@ -26,7 +26,7 @@
   ## Installation
   npm install
 
-  ## Deployed App
+  ## Deployment
   https://frozen-badlands-33386.herokuapp.com/
   
 
