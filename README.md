@@ -26,7 +26,7 @@
   ## Installation
   npm install
 
-  ## Deployment
+  ## Deployed App
   https://frozen-badlands-33386.herokuapp.com/
   
 
